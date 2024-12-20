@@ -1,13 +1,13 @@
 import pandas as pd
 
-customers_url = 'https://raw.githubusercontent.com/username/repository/main/submission/data/customers_dataset.csv'
-geolocation_url = 'https://raw.githubusercontent.com/username/repository/main/submission/data/geolocation_dataset.csv'
-order_items_url = 'https://raw.githubusercontent.com/username/repository/main/submission/data/order_items_dataset.csv'
-order_payments_url = 'https://raw.githubusercontent.com/username/repository/main/submission/data/order_payments_dataset.csv'
-order_reviews_url = 'https://raw.githubusercontent.com/username/repository/main/submission/data/order_reviews_dataset.csv'
-orders_url = 'https://raw.githubusercontent.com/username/repository/main/submission/data/orders_dataset.csv'
-products_url = 'https://raw.githubusercontent.com/username/repository/main/submission/data/products_dataset.csv'
-sellers_url = 'https://raw.githubusercontent.com/username/repository/main/submission/data/sellers_dataset.csv'
+customers_url = 'https://raw.githubusercontent.com/zuhri1818/a/refs/heads/main/data/customers_dataset.csv'
+geolocation_url = 'https://raw.githubusercontent.com/zuhri1818/a/refs/heads/main/data/geolocation_dataset.csv'
+order_items_url = 'https://raw.githubusercontent.com/zuhri1818/a/refs/heads/main/data/order_items_dataset.csv'
+order_payments_url = 'https://raw.githubusercontent.com/zuhri1818/a/refs/heads/main/data/order_payments_dataset.csv'
+order_reviews_url = 'https://raw.githubusercontent.com/zuhri1818/a/refs/heads/main/data/order_reviews_dataset.csv'
+orders_url = 'https://raw.githubusercontent.com/zuhri1818/a/refs/heads/main/data/orders_dataset.csv'
+products_url = 'https://raw.githubusercontent.com/zuhri1818/a/refs/heads/main/data/products_dataset.csv'
+sellers_url = 'https://raw.githubusercontent.com/zuhri1818/a/refs/heads/main/data/sellers_dataset.csv'
 
 customers = pd.read_csv(customers_url)
 geolocation = pd.read_csv(geolocation_url)
