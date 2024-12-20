@@ -1,0 +1,22 @@
+import pandas as pd
+
+# Membaca dataset
+customers = pd.read_csv('submission/data/customers_dataset.csv')
+geolocation = pd.read_csv('submission/data/geolocation_dataset.csv')
+order_items = pd.read_csv('submission/data/order_items_dataset.csv')
+order_payments = pd.read_csv('submission/data/order_payments_dataset.csv')
+order_reviews = pd.read_csv('submission/data/order_reviews_dataset.csv')
+orders = pd.read_csv('submission/data/orders_dataset.csv')
+products = pd.read_csv('submission/data/products_dataset.csv')
+sellers = pd.read_csv('submission/data/sellers_dataset.csv')
+
+main_data = (
+    orders
+    .merge(order_items, on='order_id', how='left')
+    .merge(order_payments, on='order_id', how='left')
+    .merge(order_reviews, on='order_id', how='left')
+    .merge(customers, on='customer_id', how='left')
+    .merge(products, on='product_id', how='left')
+    .merge(sellers, on='seller_id', how='left')
+)
+main_data.to_csv('submission/dashboard/main_data.csv', index=False)
