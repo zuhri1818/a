@@ -1,14 +1,22 @@
 import pandas as pd
 
-# Membaca dataset
-customers = pd.read_csv('submission/data/customers_dataset.csv')
-geolocation = pd.read_csv('submission/data/geolocation_dataset.csv')
-order_items = pd.read_csv('submission/data/order_items_dataset.csv')
-order_payments = pd.read_csv('submission/data/order_payments_dataset.csv')
-order_reviews = pd.read_csv('submission/data/order_reviews_dataset.csv')
-orders = pd.read_csv('submission/data/orders_dataset.csv')
-products = pd.read_csv('submission/data/products_dataset.csv')
-sellers = pd.read_csv('submission/data/sellers_dataset.csv')
+customers_url = 'https://raw.githubusercontent.com/username/repository/main/submission/data/customers_dataset.csv'
+geolocation_url = 'https://raw.githubusercontent.com/username/repository/main/submission/data/geolocation_dataset.csv'
+order_items_url = 'https://raw.githubusercontent.com/username/repository/main/submission/data/order_items_dataset.csv'
+order_payments_url = 'https://raw.githubusercontent.com/username/repository/main/submission/data/order_payments_dataset.csv'
+order_reviews_url = 'https://raw.githubusercontent.com/username/repository/main/submission/data/order_reviews_dataset.csv'
+orders_url = 'https://raw.githubusercontent.com/username/repository/main/submission/data/orders_dataset.csv'
+products_url = 'https://raw.githubusercontent.com/username/repository/main/submission/data/products_dataset.csv'
+sellers_url = 'https://raw.githubusercontent.com/username/repository/main/submission/data/sellers_dataset.csv'
+
+customers = pd.read_csv(customers_url)
+geolocation = pd.read_csv(geolocation_url)
+order_items = pd.read_csv(order_items_url)
+order_payments = pd.read_csv(order_payments_url)
+order_reviews = pd.read_csv(order_reviews_url)
+orders = pd.read_csv(orders_url)
+products = pd.read_csv(products_url)
+sellers = pd.read_csv(sellers_url)
 
 main_data = (
     orders
